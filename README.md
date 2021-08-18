@@ -32,6 +32,7 @@
 ***
 
 ## test
-* ssh -T git@github.com
-
+```
+ssh -T git@github.com
+```
 
