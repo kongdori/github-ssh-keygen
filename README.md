@@ -1,7 +1,9 @@
 ## 참고
 * https://www.lainyzine.com/ko/article/creating-ssh-key-for-github/
 
-## ssh-keygen
+***
+
+## 1. ssh-keygen
   ```
   ssh-keygen -t ed25519 -C "your_email@example.com"
   ```
@@ -10,12 +12,24 @@
   ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
   ```
 
-## ~/.ssh/config
+***
+
+## 2. ~/.ssh/config
   ```
   Host github.com
     IdentityFile ~/.ssh/id_ed25519
     User git
   ```
+
+***
+
+## 3. github 설정
+1. Your Setting
+2. SSH and GPG keys
+3. New SSH Key
+4. id_ed25519.pub (id_rsa.pub) 복사
+
+***
 
 ## test
 * ssh -T git@github.com
