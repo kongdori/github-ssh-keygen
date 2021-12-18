@@ -4,19 +4,17 @@
 ***
 
 ## 1. ssh-keygen
-  ```
+  ```bash
+  # ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
   ssh-keygen -t ed25519 -C "your_email@example.com"
-  ```
-  or
-  ```
-  ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
   ```
 
 ***
 
 ## 2. ~/.ssh/config
-  ```
+  ```vim
   Host github.com
+    # IdentityFile ~/.ssh/id_rsa
     IdentityFile ~/.ssh/id_ed25519
     User git
   ```
