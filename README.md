@@ -14,7 +14,7 @@
 ## 2. ~/.ssh/config
   ```vim
   Host github.com
-    # IdentityFile ~/.ssh/id_rsa
+    // IdentityFile ~/.ssh/id_rsa
     IdentityFile ~/.ssh/id_ed25519
     User git
   ```
