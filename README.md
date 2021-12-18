@@ -12,9 +12,9 @@
 ***
 
 ## 2. ~/.ssh/config
-  ```vim
+  ```bash
   Host github.com
-    // IdentityFile ~/.ssh/id_rsa
+    # IdentityFile ~/.ssh/id_rsa
     IdentityFile ~/.ssh/id_ed25519
     User git
   ```
